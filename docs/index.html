@@ -9,14 +9,14 @@
  <link rel="icon" type="image/png" href="ribbon.png">
  <meta name="robots" content="index, follow" /> 
  <meta lang="fr">
- <link href="CV_mobile.css" rel="stylesheet">
+ <link href="index.css" rel="stylesheet">
  <title>CV Iliyana KEHAYOVA</title>
 </head>
 
 <body>
     
     <header> 
-        <span></span>
+        <span style="display:inline-block; width:15px; height:15px; border:1px solid gray; border-radius: 50%;"></span>
         <span style="display:inline-block; width:15px; height:15px; border:1px solid gray; border-radius: 50%;"></span>
         <h1>Iliyana KEHAYOVA</h1>
         <img src="lower_dash.png" alt="" id="lower_dash">
@@ -25,6 +25,7 @@
     </header>   
 
     <main>
+
         <section class="section_photo_poste">
             
             <div class="onglet_photo">
@@ -47,6 +48,8 @@
                 </div>
             </div>
 
+
+
             <div class="conteneur_projet">
                 <p class="titre_projet">Projet de reconversion professionnelle vers le métier de</p>
             </div>
@@ -55,10 +58,12 @@
                 <p class="titre_poste">Concepteur Développeur d'Applications</p>
             </div>
 
+
+
         </section>
         
 
-    <div class="formations_et_fenetres">
+    <section class="formations_et_fenetres">
 
         <section class="section_formations_presentation">
             <div id="onglet_formations">
@@ -93,62 +98,64 @@
             <div class="derniere_fenetre"></div>
         </section>
 
-    </div>
+    </section>
 
        
 
-        <section class="section_experiences_projets">
+    <section class="section_experiences_projets">
 
-            <div class="fenetre_experience">
-                <div class="deuxieme_barre_haute">
-                    <span id="reduire_onglet">_</span>
-                    <span id="agrandir_onglet"><div></div></span>
-                    <span id="fermer_onglet">X</span>
-                </div>
-                <div class="fenetre_terminal">
-                    <p class="premiere_ligne_terminal">ikehayova@dev:~Expérience</p>
-                    <p class="deuxieme_ligne_terminal">ikehayova@dev:~Professionnelle</p>
-                </div>
-                <a href="ecran_experience.html" id="bouton_go">GO!</a>
+        <div class="fenetre_experience">
+            <div class="deuxieme_barre_haute">
+                <span id="reduire_onglet">_</span>
+                <span id="agrandir_onglet"><div></div></span>
+                <span id="fermer_onglet">X</span>
             </div>
+            <div class="fenetre_terminal">
+                <p class="premiere_ligne_terminal">ikehayova@dev:~Expérience</p>
+                <p class="deuxieme_ligne_terminal">ikehayova@dev:~Professionnelle</p>
+            </div>
+            <a href="ecran_experience.html" id="bouton_go">GO!</a>
+        </div>
 
-            <div class="fenetre_projets">
-                <a href="ecran_competences.html">
-                    <img src="icone_ordinateur.png" id="icone_ordinateur" alt="">
-                    <span class="compe">COMPE</span>
-                    <span class="tences">TENCES</span>
-                </a>
-            </div>
-        </section>
+
+
+        <div class="fenetre_competences">
+            <a href="ecran_competences.html">
+                <img src="icone_ordinateur.png" id="icone_ordinateur" alt="">
+                <span class="compe">COMPE</span>
+                <span class="tences">TENCES</span>
+            </a>
+        </div>
+    </section>
     
         
-        <section class="langues_loisirs">
-            
-            <img src="image_langues.png" id="image_langues">
-            
-            <section class="loisirs_passions">
-                <div class="troisieme_barre_haute">
-                    <span></span>
-                </div>
-                <section class="bloc_menu_loisirs">
-                    <button id="menu_deroulant_loisirs">C:\Perso\Loisirs</button>
-                        <div id="menu_liste_loisirs">
-                            <a href="">Lecture</a>
-                            <a href="">Couture</a>
-                            <a href="">Jeux vidéo</a>
-                            <a href="">Tir à l'arc</a>
-                        </div>
-                    <img src="fleche_blanche.png" class="fleche_menu_deroulant">
-                </section>
-
-                <section class="bloc_menu_passions">
-                    <button id="menu_deroulant_passions">C:\Perso\Passions</button>
-                        <div id="menu_liste_passions">
-                            <a href="">Chats</a>
-                        </div>
-                    <img src="fleche_blanche.png" class="fleche_menu_deroulant">
-                </section>
+    <section class="langues_loisirs">
+        
+        <img src="image_langues.png" id="image_langues">
+        
+        <section class="loisirs_passions">
+            <div class="troisieme_barre_haute">
+                <span></span>
+            </div>
+            <section class="bloc_menu_loisirs">
+                <button id="menu_deroulant_loisirs">C:\Perso\Loisirs</button>
+                    <div id="menu_liste_loisirs">
+                        <a href="">Lecture</a>
+                        <a href="">Couture</a>
+                        <a href="">Jeux vidéo</a>
+                        <a href="">Tir à l'arc</a>
+                    </div>
+                <img src="fleche_blanche.png" class="fleche_menu_deroulant">
             </section>
+
+            <section class="bloc_menu_passions">
+                <button id="menu_deroulant_passions">C:\Perso\Passions</button>
+                    <div id="menu_liste_passions">
+                        <a href="">Chats</a>
+                    </div>
+                <img src="fleche_blanche.png" class="fleche_menu_deroulant">
+            </section>
+        </section>
             
         </section>
         
