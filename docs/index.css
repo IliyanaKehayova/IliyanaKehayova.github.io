@@ -5,13 +5,12 @@
 }
 
 html, body {
-    margin: 0 auto;
+    margin: 0;
     min-height: 100vh;
     max-width: 430px;
 }
 
 body {
-    background-color: #f4edf2;
     background-image: url("mobile_background.png");
     background-position: center top;
     background-size: cover;
@@ -84,10 +83,7 @@ h1 {
     .section_photo_poste {
         display: grid;
         margin-left: 15px; 
-        grid-template-areas:
-        "box-1"
-        "box-2" 
-        "box-3";
+        grid-template-areas: repeat(auto-fit, minmax());
     }
 }
 
@@ -163,6 +159,7 @@ h1 {
 .boutons_play {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     height: 16px;
     justify-content: center;
     padding-top: 7px;
