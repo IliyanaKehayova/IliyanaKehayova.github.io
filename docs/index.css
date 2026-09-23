@@ -21,7 +21,7 @@ body {
 }
 
 header {
-    height: 40px; 
+    height: 60px; 
     display: flex; 
     flex-direction: row;
     background-color: #ffffff;
@@ -52,7 +52,7 @@ h1 {
 
 }
 
-@media screen and (width<420px){
+@media screen and (width<340px){
     h1 {
     font-size: 22px;
     color: #503136;
@@ -70,19 +70,17 @@ h1 {
 
 
 
-
-
 .onglet_photo {
     display: flex;
     flex-direction: column; 
     background-color: #B48195;
-    max-width: 170px; 
+    max-width: 200px; 
     border: 1px solid black;
-     margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     justify-content: center;
     align-items: center;
-   
+    margin-top: 10px; 
 }
 
 .age { 
@@ -112,11 +110,9 @@ h1 {
 .bouton_play_enverse, .bouton_play_droit {
     width: 15px;
     height: 15px;
-    margin-top: 3px; 
+    margin-top: -6px; 
     margin-left: 8px;
     margin-right: 8px;
-
-    
 }
 
 #photo_iliyana {
@@ -125,17 +121,15 @@ h1 {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     margin-bottom: 10px;
-
 }
 
 .bouton_play_central {
+    margin-top: -10px;
     width: 22px;
-    height: 22px;
-    
+    height: 22px; 
 }
 
 .age_text {
-
     margin-bottom: 0;
     font-weight: bold;
     font-size: 15px;
@@ -150,7 +144,7 @@ h1 {
     height: 16px;
     justify-content: center;
    
-    
+
 }
 
 .bouton_play_enverse {
@@ -162,7 +156,7 @@ h1 {
     margin-left: 5px;
     margin-right: 15px;
     height: 80px;
-    width: 227px;
+    width: 80%;
     background-color: #B48195;
     margin-bottom: -10px;
     font-weight: bold;
@@ -173,7 +167,7 @@ h1 {
     margin-right: auto;
     justify-content: center;
     align-items: center;
-
+    padding: 3px;
 }
 
 .titre_projet {
@@ -182,7 +176,7 @@ h1 {
 
 .conteneur_poste {
     height: 130px;
-    width: 225px;
+    width: 70%;
     background-color: #FBE8C7;
     margin-left: -20px;
     padding-left: 30px;
@@ -192,9 +186,8 @@ h1 {
     font-size: 31px;
     color: #503136;
     border: 1px solid black;
-    margin-bottom: 20px;
     margin-right: 5px;
-     margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     justify-content: center;
     align-items: center;
@@ -212,18 +205,17 @@ h1 {
     display: block;
     width: 160px;
     height: 110px;
-    padding-top: 15px;
     margin-bottom: -10px; 
-    
+    margin-top: -40px;
 }
 
 .formations {
     margin: 0;
-    margin-top: 0;
     font-weight: bold;
     font-size: 22px;
     color: #503136;
     text-align: center;
+    margin-bottom: 20px;
     
 }
 
@@ -245,7 +237,6 @@ h1 {
     position: relative;
     width: 230px;
     height: 220px;
-    margin-left: 10px;
     margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -281,7 +272,7 @@ h1 {
 }
 
 .avant_derniere_fenetre {
-    position:absolute;
+    position: absolute;
     top: 5;
     left: 5;
     width: 200px;
@@ -381,9 +372,6 @@ h1 {
 }
 
 
-
-
-
 .fenetre_experience {
     display: flex;
     flex-direction: column;
@@ -397,6 +385,7 @@ h1 {
     margin-right: auto;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .deuxieme_barre_haute {
@@ -642,7 +631,7 @@ h1 {
     width: 250px;
     height: 60px;
     border-radius: 20px;
-    margin-top: 12px;
+    margin-top: 20px;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
