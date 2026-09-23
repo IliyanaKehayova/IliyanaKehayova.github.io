@@ -30,7 +30,7 @@ header {
     align-items: center; 
     margin-bottom: 10px; 
     margin-top: 10px;
-    margin-left: 15px;
+    margin-left: 10px;
     width: 95%;
 
 }
@@ -87,7 +87,7 @@ h1 {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: space-between;
+    width: 100%;
     height: 19px;
 }
 
@@ -105,6 +105,16 @@ h1 {
     font-size: 15px; 
     margin: 1px 2px 2px 1px;
     
+}
+
+.lower_dash_and_x {
+    display: flex;
+    margin-left: auto;
+}
+
+.age > div {
+    display: flex;
+    margin-left: auto;
 }
 
 .bouton_play_enverse, .bouton_play_droit {
@@ -146,7 +156,6 @@ h1 {
    
 
 }
-
 .bouton_play_enverse {
     transform: rotate(180deg);
 }
@@ -203,16 +212,16 @@ h1 {
 
 .folder {
     display: block;
-    width: 160px;
-    height: 110px;
-    margin-bottom: -10px; 
+    width: 260px;
+    height: 210px;
+    margin-bottom: -15px; 
     margin-top: -40px;
 }
 
 .formations {
     margin: 0;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 25px;
     color: #503136;
     text-align: center;
     margin-bottom: 20px;
@@ -376,7 +385,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 230px;
+    width: 210px;
     height: 150px;
     background-color: white;
     border-radius: 5px;
@@ -392,7 +401,7 @@ h1 {
     display: flex;
     flex-direction: row;
     height: 30px;
-    width: 224px;
+    width: 204px;
     background-color: #B48195;
     border-radius: 5px;
     margin: 1px;
@@ -431,7 +440,7 @@ h1 {
 
 .fenetre_terminal {
     background-color: #503136;
-    width: 228px;
+    width: 208px;
     height: 70px; 
     margin: 1px 2px 5px 2px;
 }
@@ -439,7 +448,7 @@ h1 {
 .premiere_ligne_terminal, .deuxieme_ligne_terminal {
     color: white;
     margin-left: 3px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .premiere_ligne_terminal {
@@ -480,8 +489,8 @@ h1 {
 
 #icone_ordinateur {
     position: absolute;
-    width: 190px; 
-    height: 180px; 
+    width: 280px; 
+    height: 270px; 
     top: -10px;
     left: 50%;
     transform: translateX(-50%);
@@ -498,10 +507,10 @@ h1 {
     z-index: 2;
     color: white;
     font-weight: bold;
-    top: 30px;
+    top: 50px;
     left: 0;
     width: 100%;
-    font-size: 20px;
+    font-size: 26px;
     text-align: center;
 }
 
@@ -510,10 +519,10 @@ h1 {
     z-index: 2;
     color: white;
     font-weight: bold;
-    top: 50px;
+    top: 75px;
     left: 0;
     width: 100%;
-    font-size: 20px;
+    font-size: 26px;
     text-align: center;
 }
 
@@ -521,11 +530,13 @@ h1 {
 
 #image_langues {
     display: block;
-    width: 210px;
-    height: 150px;
+    width: 250px;
+    height: 200px;
     cursor: pointer;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: -15px;
 }
 
 .loisirs_passions {
@@ -575,6 +586,8 @@ h1 {
     height: 22px;
     margin: 10px 0px 8px 4px;
     text-align: left;
+    font-size: 17px;
+   
 }
 
 .fleche_menu_deroulant {
