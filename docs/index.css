@@ -756,32 +756,38 @@ h1 {
 #popup_reponse_negative1, 
 #popup_reponse_negative2,
 #popup_reponse_negative3 {
-    position: relative;
+    position: fixed;
     border: none;
     outline: none;
     background: transparent;
     padding: 0;
-    top: 100px;
-    left: -20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(410px, calc(100vw - 20px));
+    max-width: calc(100vw - 20px);
+    margin: 0;
 }
 
 .fenetre_reponse_negative {
     position: relative;
     display: block;
     height: 330px;
-    width: 300px;
+    width: 100%;
+    box-sizing: border-box;
     background-color: #FBE8C7;
     border: 2px solid #503136;
     border-radius: 15px;
     overflow: hidden;
-    margin-left: 20px;
+    margin: 0;
 }
 
 .barre_popup_negative {
     position: absolute;
     top: 0;
     left: 0;
-    width: 300px;
+    width: 100%;
+    box-sizing: border-box;
     height: 40px;
     background-color: #B48195;
     border-bottom: 2px solid #503136;
@@ -824,7 +830,8 @@ h1 {
 .icone_attention {
     position: absolute;
     top: 55px;
-    left: 110px;
+    left: 50%;
+    transform: translateX(-50%);
     border: 5px solid red;
     color: red;
     border-radius: 50%;
@@ -865,10 +872,11 @@ h1 {
 .popup_reponse_negative_bouton_oui {
     position: absolute;
     top: 230px;
-    left: 100px;
-    margin-left: 10px;
+    right: 20px;
+    left: auto;
+    margin-left: 0;
     margin-bottom: 5px;
-    width: 180px;
+    width: min(180px, calc(100% - 100px));
     height: 90px;
     border-radius: 23px;
     border: 1px solid #503136;
