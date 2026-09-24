@@ -162,8 +162,6 @@ h1 {
 
 .conteneur_projet {
     margin-top: 10px;
-    margin-left: 5px;
-    margin-right: 15px;
     height: 80px;
     width: 80%;
     background-color: #B48195;
@@ -181,14 +179,15 @@ h1 {
 
 .titre_projet {
     margin: 10px 0px 0px 0px;
+    text-align: center;
+    justify-content: center;
 }
 
 .conteneur_poste {
     height: 130px;
     width: 70%;
     background-color: #FBE8C7;
-    margin-left: -20px;
-    padding-left: 30px;
+    padding-left: 10px;
     order: -1; 
     font-weight: bold;
     text-align: center;
@@ -206,6 +205,8 @@ h1 {
 .titre_poste {
     margin: 10px 0px 0px 0px;
     padding-right: 10px;
+    text-align: center;
+    justify-content: center;
 }
 
 
@@ -266,7 +267,8 @@ h1 {
 .fenetre_presentation {
     position:absolute;
     top: 0;
-    left: 0;
+    left: calc(50% - 7.5px);
+    transform: translateX(-50%);
     display: grid;
     grid-template-areas:
     "box-4 box-4"
@@ -282,29 +284,27 @@ h1 {
 
 .avant_derniere_fenetre {
     position: absolute;
-    top: 5;
-    left: 5;
+    top: 9px;
+    left: calc(50% - 7.5px);
+    transform: translateX(calc(-50% + 9px));
     width: 200px;
     height: 150px;
     background-color: #FBE8C7;
     border-radius: 10px;
     z-index: 2;
-    margin-left: 9px; 
-    margin-top: 9px;
     border: 2px solid #503136; 
 }
 
 .derniere_fenetre {
     position:absolute;
-    top: 10;
-    left: 10;
+    top: 15px;
+    left: calc(50% - 7.5px);
+    transform: translateX(calc(-50% + 15px));
     width: 200px;
     height: 150px;
     background-color:#503136;
     border-radius: 10px;
     z-index: 1;
-    margin-left: 15px; 
-    margin-top: 15px;
     border: 2px solid #503136;
 }
             
@@ -575,7 +575,8 @@ h1 {
 }
 
 .bloc_menu_loisirs, .bloc_menu_passions {
-    display: inline-block;
+    display: flex;
+    align-items: center;
 } 
 
 #menu_deroulant_loisirs, 
@@ -591,13 +592,13 @@ h1 {
 }
 
 .fleche_menu_deroulant {
-    display: inline-block;
+    display: block;
     background-color: #503136;
     border: 1px solid #503136;
     height: 20px; 
     width: 20px;
-    margin-bottom: -6.5px;
     margin-left: -5px;
+    transform: translateY(1px);
 }
 
 .bloc_menu_loisirs, .bloc_menu_passions {
@@ -675,7 +676,7 @@ h1 {
     outline: none;
     background: transparent;
     padding: 0;
-    top: 200px;
+    top: 1350px;
 }
 
 
@@ -767,8 +768,8 @@ h1 {
 .fenetre_reponse_negative {
     position: relative;
     display: block;
-    height: 390px;
-    width: 410px;
+    height: 330px;
+    width: 300px;
     background-color: #FBE8C7;
     border: 2px solid #503136;
     border-radius: 15px;
@@ -780,7 +781,7 @@ h1 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 300px;
     height: 40px;
     background-color: #B48195;
     border-bottom: 2px solid #503136;
@@ -823,16 +824,18 @@ h1 {
 .icone_attention {
     position: absolute;
     top: 55px;
-    left: 160px;
+    left: 110px;
     border: 5px solid red;
     color: red;
     border-radius: 50%;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: bolder;
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     text-align: center;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
     align-items: center;
 }
@@ -841,8 +844,8 @@ h1 {
 #popup_reponse_negative_bouton_non2, 
 #popup_reponse_negative_bouton_non3 {
     position: absolute;
-    top: 310px;
-    left: 40px;
+    top: 270px;
+    left: 20px;
     color: #503136;
     font-size: 14px;
     font-weight: bolder;
@@ -861,17 +864,17 @@ h1 {
 
 .popup_reponse_negative_bouton_oui {
     position: absolute;
-    top: 270px;
-    left: 130px;
+    top: 230px;
+    left: 100px;
     margin-left: 10px;
     margin-bottom: 5px;
-    width: 230px;
+    width: 180px;
     height: 90px;
     border-radius: 23px;
     border: 1px solid #503136;
     background-color: #B48195;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     color: white;
     display: flex;
@@ -885,10 +888,10 @@ h1 {
 #popup_reponse_negative2 h2,
 #popup_reponse_negative3 h2 {
     position: absolute;
-    top: 150px;
-    left: 30px;
+    top: 130px;
+    left: 15px;
     width: 90%;
-    font-size: 30px;
+    font-size: 23px;
     text-align: center;
     color: #503136;
     font-weight: bold;
